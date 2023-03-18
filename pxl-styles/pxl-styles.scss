@@ -1,0 +1,235 @@
+// https://uicolors.app/edit?sv1=blue:50-f3f7fc/100-e5eef9/200-c6ddf1/300-94c1e5/400-5ca1d6/500-3584c2/600-2569a4/700-1f5485/800-1e486e/900-1e3d5c;green:50-f2fbf4/100-e1f7e7/200-c4eecf/300-96dfaa/400-60c87d/500-3db35e/600-2b8e47/700-25703a/800-225932/900-1e492b;red:50-fef2f2/100-fde3e4/200-fcccce/300-f9a8ab/400-f3767a/500-e94a4f/600-d83b40/700-b32227/800-942024/900-7b2124;blue:50-ebfeff/100-cdfaff/200-a1f2ff/300-60e6ff/400-08cbf5/500-00b3de/600-008eba/700-087196/800-115b79/900-124c67;neutral:50-f7f7f7/100-e3e3e3/200-c8c8c8/300-a4a4a4/400-818181/500-666666/600-515151/700-434343/800-383838/900-1b1b1b
+
+// OPEN SANS FONT IMPORT
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+// font-family: 'Open Sans', sans-serif;
+
+////////////////////
+// BASE COLORS SECTION //
+////////////////////
+///
+// NEUTRAL
+$pxl-color-neutral-0: #ffffff;
+$pxl-color-neutral-50: #f7f7f7;
+$pxl-color-neutral-100: #e3e3e3;
+$pxl-color-neutral-200: #c8c8c8;
+$pxl-color-neutral-300: #a4a4a4;
+$pxl-color-neutral-400: #818181;
+$pxl-color-neutral-500: #666666;
+$pxl-color-neutral-600: #515151;
+$pxl-color-neutral-700: #434343;
+$pxl-color-neutral-800: #383838;
+$pxl-color-neutral-900: #1b1b1b;
+$pxl-color-neutral-1000: #000000;
+
+//BLUE
+$pxl-color-blue-50: #f3f7fc;
+$pxl-color-blue-100: #e5eef9;
+$pxl-color-blue-200: #c6ddf1;
+$pxl-color-blue-300: #94c1e5;
+$pxl-color-blue-400: #5ca1d6;
+$pxl-color-blue-500: #3584c2;
+$pxl-color-blue-600: #2569a4;
+$pxl-color-blue-700: #1f5485;
+$pxl-color-blue-800: #1e486e;
+$pxl-color-blue-900: #1e3d5c;
+
+// Red
+$pxl-color-red-50: #fef2f2;
+$pxl-color-red-100: #fde3e4;
+$pxl-color-red-200: #fcccce;
+$pxl-color-red-300: #f9a8ab;
+$pxl-color-red-400: #f3767a;
+$pxl-color-red-500: #e94a4f;
+$pxl-color-red-600: #d83b40;
+$pxl-color-red-700: #b32227;
+$pxl-color-red-800: #942024;
+$pxl-color-red-900: #7b2124;
+
+// Green
+$pxl-color-green-50: #f2fbf4;
+$pxl-color-green-100: #e1f7e7;
+$pxl-color-green-200: #c4eecf;
+$pxl-color-green-300: #96dfaa;
+$pxl-color-green-400: #60c87d;
+$pxl-color-green-500: #3db35e;
+$pxl-color-green-600: #2b8e47;
+$pxl-color-green-700: #25703a;
+$pxl-color-green-800: #225932;
+$pxl-color-green-900: #1e492b;
+
+////////////////////
+// THEME COLORS SECTION //
+////////////////////
+///
+// $pxl-color-brand-primary-lighter: ;
+$pxl-color-brand-primary-light: $pxl-color-blue-400;
+$pxl-color-brand-primary-base: $pxl-color-blue-600;
+$pxl-color-brand-primary-dark: $pxl-color-blue-800;
+// $pxl-color-brand-primary-darker: ;
+
+// $pxl-color-brand-secondary-lighter: ;
+$pxl-color-brand-secondary-light: $pxl-color-neutral-400;
+$pxl-color-brand-secondary-base: $pxl-color-neutral-600;
+$pxl-color-brand-secondary-dark: $pxl-color-neutral-800;
+// $pxl-color-brand-secondary-darker: ;
+
+////////////////////
+// SPACING VALUES //
+////////////////////
+///
+$pxl-sizing-1: 0.25rem; // 4px, 0.25rem
+$pxl-sizing-2: 0.5rem; // 8px, 0.5rem
+$pxl-sizing-3: 0.75rem; // 12px, 0.75rem
+$pxl-sizing-4: 1rem; // 16px, 1rem
+$pxl-sizing-5: 1.25rem; // 20px, 1.25rem
+$pxl-sizing-6: 1.5rem; // 24px, 1.5rem
+$pxl-sizing-7: 1.75rem; // 28px, 1.75rem
+$pxl-sizing-8: 2rem; // 32px, 2rem
+$pxl-sizing-9: 2.25rem; // 36px, 2.25rem
+$pxl-sizing-10: 2.5rem; // 40px, 2.5rem
+$pxl-sizing-11: 2.75rem; // 44px, 2.75rem
+$pxl-sizing-12: 3rem; // 48px, 3rem
+$pxl-sizing-13: 3.25rem; // 52px, 3.25rem
+$pxl-sizing-14: 3.5rem; // 56px, 3.5rem
+$pxl-sizing-15: 3.75rem; // 60px, 3.75rem
+$pxl-sizing-16: 4rem; // 64px, 4rem
+$pxl-sizing-18: 4.5rem; // 72px, 4.5rem
+$pxl-sizing-20: 5rem; // 80px, 5rem
+
+////////////////////
+// ELEVATION //
+////////////////////
+///
+$pxl-elevation-1: 0px 1px 4px rgba(0, 0, 0, 0.2);
+$pxl-elevation-2: 0px 2px 8px rgba(0, 0, 0, 0.2);
+$pxl-elevation-3: 0px 4px 16px rgba(0, 0, 0, 0.2);
+$pxl-elevation-4: 0px 6px 24px rgba(0, 0, 0, 0.2);
+$pxl-elevation-none: 0px 0px 0px rgba(0, 0, 0, 0);
+
+////////////////////
+// TYPOGRAPHY //
+////////////////////
+///
+$pxl-font-family-primary: "Open Sans", sans-serif;
+
+$pxl-font-weight-1: 200; // Thin
+$pxl-font-weight-2: 400; // Regular
+$pxl-font-weight-3: 500; // Medium
+$pxl-font-weight-4: 600; // Demi
+$pxl-font-weight-5: 700; // Bold
+$pxl-font-weight-6: 800; // Heavy
+
+.weight-thin {
+  font-weight: $pxl-font-weight-1;
+}
+.weight-regular {
+  font-weight: $pxl-font-weight-2;
+}
+.weight-medium {
+  font-weight: $pxl-font-weight-3;
+}
+.weight-demi {
+  font-weight: $pxl-font-weight-4;
+}
+.weight-bold {
+  font-weight: $pxl-font-weight-5;
+}
+.weight-heavy {
+  font-weight: $pxl-font-weight-6;
+}
+
+h1 {
+  font-family: $pxl-font-family-primary;
+  font-weight: $pxl-font-weight-5; // default
+  font-size: $pxl-sizing-12;
+  line-height: $pxl-sizing-15;
+}
+h2 {
+  font-family: $pxl-font-family-primary;
+  font-weight: $pxl-font-weight-5; // default
+  font-size: $pxl-sizing-8;
+  line-height: $pxl-sizing-11;
+}
+h3 {
+  font-family: $pxl-font-family-primary;
+  font-weight: $pxl-font-weight-5; // default
+  font-size: $pxl-sizing-6;
+  line-height: $pxl-sizing-8;
+}
+h4 {
+  font-family: $pxl-font-family-primary;
+  font-weight: $pxl-font-weight-5; // default
+  font-size: $pxl-sizing-5;
+  line-height: $pxl-sizing-7;
+}
+h5 {
+  font-family: $pxl-font-family-primary;
+  font-weight: $pxl-font-weight-5; // default
+  font-size: $pxl-sizing-4;
+  line-height: $pxl-sizing-6;
+}
+h6 {
+  font-family: $pxl-font-family-primary;
+  font-weight: $pxl-font-weight-5; // default
+  font-size: 14px;
+  line-height: $pxl-sizing-5;
+}
+
+body {
+  font-family: $pxl-font-family-primary;
+  font-weight: $pxl-font-weight-2; // default
+  font-size: $pxl-sizing-4;
+  line-height: $pxl-sizing-6;
+}
+
+////////////////////
+// ACTIONS BUTTONS, LINKS //
+////////////////////
+///
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  font-weight: $pxl-font-weight-4;
+}
+
+.btn-primary {
+  background: $pxl-color-brand-primary-base;
+  color: $pxl-color-neutral-0;
+}
+
+.btn-primary:hover {
+  background: $pxl-color-brand-primary-dark;
+  color: $pxl-color-neutral-0;
+}
+.btn-secondary {
+  background: $pxl-color-brand-secondary-base;
+  color: $pxl-color-neutral-0;
+}
+
+.btn-secondary:hover {
+  background: $pxl-color-brand-secondary-dark;
+  color: $pxl-color-neutral-0;
+}
+
+.btn-size-medium {
+  border-radius: $pxl-sizing-1;
+  font-size: $pxl-sizing-4;
+
+  min-width: 100px;
+  min-height: $pxl-sizing-9;
+  padding-left: $pxl-sizing-4;
+  padding-right: $pxl-sizing-4;
+}
+
+.btn-size-large {
+  border-radius: $pxl-sizing-1;
+  font-size: $pxl-sizing-5;
+
+  min-width: 120px;
+  min-height: $pxl-sizing-12;
+  padding-left: $pxl-sizing-4;
+  padding-right: $pxl-sizing-4;
+}
