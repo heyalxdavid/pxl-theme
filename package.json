@@ -1,6 +1,6 @@
 {
   "name": "pxl-theme",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Basic SCSS Styles for my projects",
   "main": "pxl-styles/pxl-styles.scss",
   "scripts": {
