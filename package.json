@@ -3,6 +3,9 @@
   "version": "1.0.2",
   "description": "Basic SCSS Styles for my projects",
   "main": "pxl-styles/pxl-styles.scss",
+  "publishConfig": {
+    "registry": "https://www.npmjs.com/package/pxl-theme"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

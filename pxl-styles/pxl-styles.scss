@@ -4,7 +4,17 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  /* Global values */
+  text-rendering: inherit;
+  text-rendering: initial;
+  text-rendering: revert;
+  text-rendering: revert-layer;
+  text-rendering: unset;
 }
+
+// ROBOTO FONT IMPORT
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+//  font-family: 'Roboto', sans-serif;
 
 // MONTSERRAT FONT IMPORT
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -13,6 +23,12 @@
 // OPEN SANS FONT IMPORT
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 // font-family: 'Open Sans', sans-serif;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 ////////////////////
 // BASE COLORS SECTION //
@@ -158,20 +174,23 @@ $pxl-elevation-none: 0px 0px 0px rgba(0, 0, 0, 0);
 // BORDER RADIUS //
 ////////////////////
 ///
-$pxl-border-radius: $pxl-sizing-2;
+$pxl-border-radius: $pxl-sizing-2; //8px
 
 ////////////////////
 // TYPOGRAPHY //
 ////////////////////
 ///
-$pxl-font-family-primary: "Montserrat", sans-serif;
+// $pxl-font-family-primary: "Roboto", sans-serif;
+// $pxl-font-family-primary: "Montserrat", sans-serif;
+$pxl-font-family-primary: "Open Sans", sans-serif;
 
 $pxl-font-weight-1: 200; // Thin
 $pxl-font-weight-2: 400; // Regular
 $pxl-font-weight-3: 500; // Medium
-$pxl-font-weight-4: 600; // Demi
+$pxl-font-weight-4: 600; // Semi / Demi
 $pxl-font-weight-5: 700; // Bold
 $pxl-font-weight-6: 800; // Heavy
+$pxl-font-weight-7: 900; // Black
 
 .weight-thin {
   font-weight: $pxl-font-weight-1;
@@ -231,9 +250,9 @@ h6 {
 
 body {
   font-family: $pxl-font-family-primary;
-  font-weight: $pxl-font-weight-3; // default
   font-size: $pxl-sizing-4;
   line-height: $pxl-sizing-6;
+  font-weight: $pxl-font-weight-3; // default
   color: $pxl-text-primary;
 }
 
@@ -249,6 +268,9 @@ body {
   border: none;
   font-weight: $pxl-font-weight-4;
   border-radius: $pxl-border-radius;
+  font-family: inherit;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .btn-primary {
@@ -272,23 +294,22 @@ body {
 
 .btn-size-medium {
   font-size: $pxl-sizing-4;
-  min-width: 100px;
-  min-height: $pxl-sizing-9;
-  padding-left: $pxl-sizing-4;
-  padding-right: $pxl-sizing-4;
+  line-height: $pxl-sizing-6;
+  min-width: 120px;
+  padding: $pxl-sizing-2 $pxl-sizing-4;
 }
 
 .btn-size-large {
-  font-size: $pxl-sizing-5;
+  font-size: $pxl-sizing-4;
+  line-height: $pxl-sizing-6;
   min-width: 120px;
-  min-height: $pxl-sizing-12;
-  padding-left: $pxl-sizing-4;
-  padding-right: $pxl-sizing-4;
+  padding: calc($pxl-sizing-3 - 2px) $pxl-sizing-4;
 }
 
 //LINKS
 // /* unvisited link */
 a:link {
+  font-family: inherit;
   color: $pxl-ui-primary;
   text-decoration: none;
   font-weight: $pxl-font-weight-4;
@@ -338,20 +359,19 @@ textarea {
   appearance: none;
   font-family: inherit;
   font-size: inherit;
+  line-height: inherit;
   background-color: $pxl-color-neutral-100;
   display: inherit;
   width: 50%;
-  min-height: $pxl-sizing-12;
-  padding-left: $pxl-sizing-2;
-  padding-right: $pxl-sizing-2;
+  padding: calc($pxl-sizing-3 - 2px) $pxl-sizing-3;
   border-radius: $pxl-border-radius;
   resize: vertical;
 }
 
-input:not(textarea) {
-  line-height: 1;
-  height: 2.25rem;
-}
+// input:not(textarea) {
+//   line-height: 1;
+//   height: 2.25rem;
+// }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
