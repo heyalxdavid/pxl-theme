@@ -1,3 +1,3 @@
 # pxl-theme
 
-Basic SCSS Styles for my projects update test
+Basic SCSS Style Theme
