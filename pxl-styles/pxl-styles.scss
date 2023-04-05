@@ -136,6 +136,7 @@ $pxl-ui-secondary-active: $pxl-color-brand-secondary-base;
 
 $pxl-text-primary: $pxl-color-neutral-950;
 $pxl-text-secondary: $pxl-color-neutral-900;
+$pxl-text-placeholder: $pxl-color-neutral-400;
 
 ////////////////////
 // SPACING VALUES //
@@ -282,6 +283,12 @@ body {
   background: $pxl-ui-primary-hover;
   color: $pxl-color-neutral-0;
 }
+
+.btn-primary:active {
+  background: $pxl-ui-primary-active;
+  color: $pxl-color-neutral-0;
+}
+
 .btn-secondary {
   background: $pxl-ui-secondary;
   color: $pxl-color-neutral-0;
@@ -289,6 +296,11 @@ body {
 
 .btn-secondary:hover {
   background: $pxl-ui-secondary-hover;
+  color: $pxl-color-neutral-0;
+}
+
+.btn-secondary:active {
+  background: $pxl-ui-secondary-active;
   color: $pxl-color-neutral-0;
 }
 
@@ -379,4 +391,11 @@ select:focus,
 textarea:focus {
   background: none;
   outline: 2px solid $pxl-ui-primary;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+select::placeholder,
+textarea::placeholder {
+  color: $pxl-text-placeholder;
 }

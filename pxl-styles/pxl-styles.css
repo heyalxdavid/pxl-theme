@@ -114,6 +114,11 @@ body {
   color: #ffffff;
 }
 
+.btn-primary:active {
+  background: #33683b;
+  color: #ffffff;
+}
+
 .btn-secondary {
   background: #404045;
   color: #ffffff;
@@ -121,6 +126,11 @@ body {
 
 .btn-secondary:hover {
   background: #2f2f32;
+  color: #ffffff;
+}
+
+.btn-secondary:active {
+  background: #404045;
   color: #ffffff;
 }
 
@@ -198,4 +208,15 @@ select:focus,
 textarea:focus {
   background: none;
   outline: 2px solid #33683b;
+}
+
+input[type=text]::-moz-placeholder, input[type=email]::-moz-placeholder, select::-moz-placeholder, textarea::-moz-placeholder {
+  color: #7c7d85;
+}
+
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+select::placeholder,
+textarea::placeholder {
+  color: #7c7d85;
 }/*# sourceMappingURL=pxl-styles.css.map */
